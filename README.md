@@ -1,7 +1,7 @@
-### Hi there 👋, i'm Santiago Agudelo.
+### Hi there 👋
+#### I'm Santiago Agudelo.
 
 - 🌱 All the time i'm learning.
-
 <!--
 **RedLyon1200/RedLyon1200** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

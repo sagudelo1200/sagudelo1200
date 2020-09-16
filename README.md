@@ -4,6 +4,7 @@
 <p align="center">- 🌱 Scout</p>
 <p align="center">- 🍃 Nature first</p>
 <!-- <h2 align="center"><a id="About_me_6"></a>About me</h2> -->
+<br><br>
 <p align="center">💜 Scouting | 💚 Nature | 💙 Programming</p>
 <p align="center">
   <a>🇨🇴 I’m from Medellin - Colombia</a><br>

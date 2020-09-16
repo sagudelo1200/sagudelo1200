@@ -1,12 +1,8 @@
 <h1 align="center"><a id="Hi_Im_Alejandro_chicken_0"></a>&nbsp;Hi there 👋, I’m Santiago.</h1>
 <p align="center">Full-Stack | Software developer. (coding me)</p>
-<p align="center">|</p>
 <p align="center">- 👨‍💻 Holberton School Student</p>
-<p align="center">|</p>
 <p align="center">- 🌱 Scout</p>
-<p align="center">|</p>
 <p align="center">- 🍃 Nature first</p>
-<p align="center">|</p>
 <!-- <h2 align="center"><a id="About_me_6"></a>About me</h2> -->
 <p align="center">💜 Scouting | 💚 Nature | 💙 Programming</p>
 <p align="center">

@@ -1,0 +1,92 @@
+// Bootstrap theme
+@import url('bootstrap_theme.min.css');
+
+$black:#0C0A1A;
+$white:#F8F9FA;
+
+body {
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+footer {
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+.wrapper {
+    display: grid;
+}
+
+.wrapper .button {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    margin-top: 4px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px $white;
+    color: $white;
+    overflow: hidden;
+    border-radius: 40px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+    background: $black;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 40px;
+    box-sizing: border-box;
+    line-height: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.wrapper .button:hover .icon {
+    background: $white;
+    color: $black;
+}
+
+
+.wrapper .button .icon i {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 10px;
+}

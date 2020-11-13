@@ -26,14 +26,14 @@ class DBStorage:
         self.__engine = firebase_admin.initialize_app(app)
         self.__db = firestore.client()
 
-    def all(self, doc=None):
+    def all(self, col=None):
         '''
         query on te current firestorage session
         '''
         data = {}
 
         for class_ in classes:
-            if not doc or doc == class_ or doc is classes[class_]:
+            if not col or col == class_ or col is classes[class_]:
                 docs = self.__db.collection(class_).stream()
                 for _doc in docs:
                     obj = _doc.to_dict()
@@ -43,6 +43,29 @@ class DBStorage:
                     obj.pop('_class_')
                     data[key] = obj
         return data
+
+    def get(self, col, id: str):
+        ''' Get dic from id in col '''
+        doc = {}
+
+        try:
+            if col.__name__ not in classes:
+                raise AttributeError
+
+            docs = self.__db.collection(col.__name__).stream()
+            for _doc in docs:
+                if id == _doc.id:
+                    obj = _doc.to_dict()
+                    obj['id'] = _doc.id
+                    key = f'{obj.get("_class_")}.{_doc.id}'
+                    obj['__class__'] = obj.get('_class_')
+                    obj.pop('_class_')
+                    doc[key] = obj
+        except AttributeError:
+            return {'db_error': 'Invalid collection'}
+        if not doc:
+            return {'error': 'non-existent document in collection'}
+        return doc
 
     def save(self, doc=None, merge=False):
         ''' Save in firestorage '''
@@ -57,9 +80,9 @@ class DBStorage:
             print('EXIT')
             exit(-1)
 
-    def exists(self, doc, id):
+    def exists(self, col, id):
         '''Validate if doc exists in firestore'''
-        docs = self.__db.collection(doc).stream()
+        docs = self.__db.collection(col).stream()
 
         for _doc in docs:
             if _doc.id == id:

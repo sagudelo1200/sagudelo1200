@@ -7,7 +7,7 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 from models.project import Project
 
-classes = {'Project': Project}
+colections = {'Project': Project}
 cred = getenv('PORTFOLIO_CREDENTIALS')
 
 
@@ -32,9 +32,9 @@ class DBStorage:
         '''
         data = {}
 
-        for class_ in classes:
-            if not col or col == class_ or col is classes[class_]:
-                docs = self.__db.collection(class_).stream()
+        for col_ in colections:
+            if not col or col == col_ or col is colections[col_]:
+                docs = self.__db.collection(col_).stream()
                 for _doc in docs:
                     obj = _doc.to_dict()
                     obj['id'] = _doc.id
@@ -49,10 +49,11 @@ class DBStorage:
         doc = {}
 
         try:
-            if col.__name__ not in classes:
+            col = col.__name__
+            if col not in colections:
                 raise AttributeError
 
-            docs = self.__db.collection(col.__name__).stream()
+            docs = self.__db.collection(col).stream()
             for _doc in docs:
                 if id == _doc.id:
                     obj = _doc.to_dict()
@@ -62,9 +63,9 @@ class DBStorage:
                     obj.pop('_class_')
                     doc[key] = obj
         except AttributeError:
-            return {'db_error': 'Invalid collection'}
+            return {'error': f'Invalid collection {col}'}
         if not doc:
-            return {'error': 'non-existent document in collection'}
+            return {'error': f'non-existent {id} in {col}s'}
         return doc
 
     def save(self, doc=None, merge=False):

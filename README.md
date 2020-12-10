@@ -1,5 +1,5 @@
 # Santiago Agudelo
-<center>https://raw.githubusercontent.com/sagudelo1200/sagudelo1200/main/im.gif</center>
+![Hey there, I'm Agudelo. I'm a FullStack Software Developer, a creator and enthusiast of technology and nature. Look at my work](https://raw.githubusercontent.com/sagudelo1200/sagudelo1200/main/im.gif)
 
 ```python
 def get_bio() -> dict:

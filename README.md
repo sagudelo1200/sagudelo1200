@@ -4,8 +4,8 @@
 ```python
 def get_bio() -> dict:
     return {
-        '- ⚡ Quick bio:': 'I’m of a kind a little strange, a Scout hybrid between Rock-Techno-Soul-Indie-Pop
-                          'Travel-Programming-Coffee-Code-FoodLover-NatureFirst-Astronomy_and_Photography_Newbie,
+        '- ⚡ Quick bio:': 'I’m of a kind a little strange, a Scout hybrid between Rock-Techno-Soul-Indie-Pop' +
+                          'Travel-Programming-Coffee-Code-FoodLover-NatureFirst-Astronomy_and_Photography_Newbie,' +
                           'CatLover and always wanting to learn.',
         '- 🌱 I’m currently self-learning': 'React, Node.js, MongoDB --- (simply to improve my skills)',
         '- 👯 I’m looking to collaborate on': 'Python related projects',

@@ -1,17 +1,24 @@
-<h1 align="center"><a id="Hi_Im_Alejandro_chicken_0"></a>&nbsp;Hi there 👋, I’m Santiago.</h1>
-<p align="center">Full-Stack | Software developer. (coding me)</p>
-<p align="center">- 👨‍💻 Holberton School Student</p>
-<p align="center">- 🌱 Scout</p>
-<p align="center">- 🍃 Nature first</p>
-<!-- <h2 align="center"><a id="About_me_6"></a>About me</h2> -->
-<br><br>
-<p align="center">💜 Scouting | 💚 Nature | 💙 Programming</p>
-<p align="center">
-  <a>🇨🇴 I’m from Medellin - Colombia</a><br>
-</p>
-<h2 align="center"><a id="Social_media_mailbox_with_no_mail_15"></a>Social media :mailbox_with_no_mail:</h2>
-<p align="center">
-  <a href="https://twitter.com/sagudelo1200"><img src="https://img.shields.io/twitter/url?color=%231DA1F2&amp;label=follow&amp;logo=twitter&amp;logoColor=%231DA1F2&amp;style=flat-square&amp;url=https%3A%2F%2Fwww.reddit.com%2Fuser%2FFatChicken277" alt="Twitter URL"></a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/s-agudelo/"><img src="https://img.shields.io/twitter/url?color=%230072b1&amp;label=connect&amp;logo=linkedin&amp;logoColor=%230072b1&amp;style=flat-square&amp;url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Falejandro-ramirez-ciceros%2F" alt="Twitter URL"></a>
-</p>
+# Santiago Agudelo
+![Hey there, I'm Agudelo. I'm a FullStack Software Developer, a creator and enthusiast of technology and nature. Look at my work](https://raw.githubusercontent.com/sagudelo1200/sagudelo1200/main/im.gif)
+
+```python
+def get_bio() -> dict:
+    return {
+        '- ⚡ Quick bio:': 'I’m of a kind a little strange, a Scout hybrid between Rock-Techno-Soul-Indie-Pop-Travel-Programming-Coffee-Code-FoodLover-NatureFirst-Astronomy_and_Photography_Newbie, CatLover and always wanting to learn.',
+        '- 🌱 I’m currently self-learning': 'React, Node.js, MongoDB --- (simply to improve my skills)',
+        '- 👯 I’m looking to collaborate on': 'Python related projects',
+        '- 💬 Ask me about': 'C, C#, Python, Firebase, MySQL, HTML, CSS, Nginx, Web Server and Web Dev'
+    }
+
+if __name__ == '__main__':
+    for key, val in get_bio().items():
+        print(f'{key}: {val}')
+```
+
+---
+### 🐱My Github stats:
+![Apoorv's github stats](https://github-readme-stats.vercel.app/api?username=sagudelo1200&show_icons=true&title_color=ffc857&icon_color=8ac926&text_color=daf7dc&bg_color=151515&hide=["stars"])
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sagudelo1200&layout=compact&text_color=daf7dc&bg_color=151515)](https://github.com/anuraghazra/github-readme-stats)
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->

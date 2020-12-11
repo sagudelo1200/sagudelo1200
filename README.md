@@ -23,4 +23,7 @@ if __name__ == '__main__':
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sagudelo1200&layout=compact&text_color=daf7dc&bg_color=151515)
 
 <!--START_SECTION:waka-->
+```text
+Markdown   59 mins         █████████████████████████   100.00 % 
+```
 <!--END_SECTION:waka-->

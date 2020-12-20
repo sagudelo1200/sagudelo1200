@@ -24,8 +24,6 @@ if __name__ == '__main__':
 
 <!--START_SECTION:waka-->
 ```text
-Python       2 hrs 23 mins   ██████████████████████▒░░   89.61 % 
-Git Config   9 mins          █▒░░░░░░░░░░░░░░░░░░░░░░░   05.85 % 
-Text         7 mins          █░░░░░░░░░░░░░░░░░░░░░░░░   04.54 % 
+No Activity tracked this Week
 ```
 <!--END_SECTION:waka-->

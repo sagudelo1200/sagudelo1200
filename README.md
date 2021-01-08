@@ -24,6 +24,6 @@ if __name__ == '__main__':
 
 <!--START_SECTION:waka-->
 ```text
-No Activity tracked this Week
+Python       4 mins          ████████████████████▒░░░░   81.37 % 
 ```
 <!--END_SECTION:waka-->
